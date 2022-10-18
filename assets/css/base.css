@@ -1,0 +1,26 @@
+:root
+{
+    --primary-color:#EE4D2D;
+    --white-color: #FFF;
+    --black-color:#000;
+    --text-color:#333;
+    --border-color:#dbdbdb;
+
+    --header__height:120px;
+    --navbar__height:34px;
+    --search__height:calc(var(--header__height) - var(--navbar__height));
+}
+/* Reset css */
+*
+{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+html
+{
+    font-size:62.5%;
+    line-height: 1.6rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}

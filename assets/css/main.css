@@ -1,0 +1,217 @@
+/* 
+    1. Từ ngoài vào trong
+    2. Từ trên xuống dưới
+    3. Tổng quan đến chi tiết
+*/
+/* 
+    1. Location
+    2. Size (width,height)
+    3. Color
+    4. Form (Font-size,font,...)
+*/
+#main
+{
+
+}
+#header
+{
+    height:46px;
+    background-color: #000; 
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:2;  
+}
+#nav
+{
+    list-style: none;
+    display:inline-block;
+}
+#nav >li 
+{
+    display:inline-block;
+}
+#nav li
+{
+    
+    position: relative;
+}
+#nav > li > a
+{
+    color:#fff;
+}
+#nav li a
+{
+    text-decoration: none;
+    font-size:1.8rem;
+    line-height: 46px;
+    text-transform: uppercase;
+    padding:0 24px;
+    display:inline-block;
+}
+#nav > li:hover  > a , #nav .subnav li:hover, #nav li:hover i
+{
+    background-color: #ccc;
+    color:#000;
+}
+#nav >li:hover>.subnav
+{
+    display:block;
+}
+#nav i
+{
+    font-size:1.8rem;
+    color:#ccc;
+}
+#nav .subnav
+{
+   display: none;
+   position:absolute;
+   top:100%;
+   left:0;
+   background-color: #fff;
+   list-style: none;
+   z-index: 1;
+   box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+#nav .subnav a
+{
+    color:#000; 
+    padding:0 12px;
+    line-height: 38px;
+    text-transform: none;
+}
+.search--btn
+{
+    display: inline-block;
+    float:right;
+    line-height: 41px;
+}
+.search--icon
+{
+    font-size:1.6rem;
+    color:var(--white-color);
+    padding:15px 24px;
+}
+.search--btn:hover
+{
+    background-color: var(--primary-color);
+    cursor:pointer;
+}
+#slider
+{
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+.mySlides
+{
+    display:none;   
+    position:relative;
+}
+.mySlides-image
+{
+    width:100%;
+}
+.mySlides--CaptionText
+{
+    color:#fff;
+    font-size:1.8rem;
+    font-weight: bold;
+    position: absolute;
+    z-index:1;
+    top:90%;
+    left:0;
+    text-align: center;
+    width:100%;
+}
+#selection
+{
+    max-width:880px;
+    padding:20px 40px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+#selection h3
+{
+    width:100%;
+    text-align: center;
+    font-size:2.5rem;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+#selection span
+{
+    font-style: italic;
+    font-size:1.6rem;
+    text-align: center;
+    width:100%;
+    display:block;
+    padding-top:30px;
+}
+#selection p
+{
+    padding:20px 5px;
+    text-align: justify;
+    font-size: 1.8rem;
+}
+.selection__menu
+{
+    display:flex;
+    justify-content: space-around;
+    padding:32px 0;
+}
+.selection__menu-items
+{
+    text-align: center;
+}
+.selection__menu-items span
+{
+    display:block;
+    margin-bottom: 20px;
+
+}
+.selection__menu-items img
+{
+    width:60%;
+    
+}
+#tourdates
+{
+    width:100%;
+    /* color:#fff; */
+}
+.tourdates-selections
+{
+    padding-left:0;
+    margin:0;
+    list-style: none;
+}
+.tourdates-selections span
+{
+    display:inline-block;
+}
+#container
+{   
+
+}
+#content
+{
+
+}
+#footer
+{
+
+}
