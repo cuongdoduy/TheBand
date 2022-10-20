@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/fontawesome-free-6.2.0-web/css/all.css">
+    <link rel="icon" href="assets/img/tải xuống2.png">
    
 </head>
 <body>
@@ -89,26 +90,96 @@
                 <h3>Tour Dates</h3>
                 <span>Remember to book your tickets!</span>
                 <ul class="tourdates-selections">
-                    <li class="toudate-details">
-                        <span>September</span>
-                        <span>Sold out</span>
+                    <li class="tourdates-details">
+                        <div class="tourdates-details-box">
+                            <span>September</span>
+                            <span>Sold out</span>
+                        </div>
                     </li>
-                    <li class="toudate-details">
-                        <span>October</span>
-                        <span>Sold out</span>
+                    <li class="tourdates-details">
+                        <div class="tourdates-details-box">
+                            <span>October</span>
+                            <span>Sold out</span>
+                        </div>
                     </li>
-                    <li class="toudate-details">
-                        <span>November</span>
-                        <span>3</span>
+                    <li class="tourdates-details">
+                        <div class="tourdates-details-box tourdates-details-box--active">
+                            <span>November</span>
+                            <span>3</span>
+                        </div>
                     </li>
                 </ul>
+                <div class="selection--select-menu">
+                    <div class="selection--select-items">
+                        <img src="https://www.w3schools.com/w3images/newyork.jpg" alt="" class="">
+                        <div class="selection--select-items-description">
+                            <h4>New York</h4>
+                            <p> Fri 27 Nov 2016</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="btn btn--buy">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="selection--select-items">
+                        <img src="	https://www.w3schools.com/w3images/paris.jpg" alt="" class="">
+                        <div class="selection--select-items-description">
+                            <h4>Paris</h4>
+                            <p> Sat 28 Nov 2016</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="btn btn--buy">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="selection--select-items">
+                        <img src="https://www.w3schools.com/w3images/newyork.jpg" alt="" class="">
+                        <div class="selection--select-items-description">
+                            <h4>New York</h4>
+                            <p> Fri 27 Nov 2016</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="btn btn--buy">Buy Tickets</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div id="container">
-            <div id="content"></div>
+        <div id="contact">
+            <div id="selection">
+                <h3>Contact</h3>
+                <span>Fan? Drop a note!</span>
+                <ul class="contact-in4">
+                    <li class="contact-in4-items">
+                        <i class="contact-in4-icon fa fa-map-marker"></i>
+                        <span>Chicago, US</span>
+                    </li>
+                    <li class="contact-in4-items">
+                        <i class="contact-in4-icon fa fa-phone"></i>
+                        <span> Phone: +00 151515</span>
+                    </li>
+                    <li class="contact-in4-items">
+                        <i class="contact-in4-icon fa fa-envelope"> </i>
+                        <span>Email: cuong.doduy@hcmut.edu.vn</span>
+                    </li>
+                </ul>
+                <div class="contact-in4-user">
+                    <div class="contact-in4-user--name-gmail">
+                        <input type="text" class="contact-in4-user-data" placeholder="Name">
+                        <input type="text" class="contact-in4-user-data" placeholder="Gmail">
+                    </div>
+                    <input type="text" class="contact-in4-user-data contact-in4-user-data-note " placeholder="Message">
+                    <button class="btn contact-in4-user-btn--send">SEND</button>
+                </div>
+            </div>
         </div>
+            <img src="	https://www.w3schools.com/w3images/map.jpg" alt="" class="image--map">
+        
         <div id="footer">
-
+            <i class="footer__icon fa-brands fa-facebook"></i>
+            <i class="footer__icon fa-brands fa-instagram"></i>
+            <i class="footer__icon fa-brands fa-snapchat"></i>
+            <i class="footer__icon fa-brands fa-pinterest"></i>
+            <i class="footer__icon fa-brands fa-twitter"></i>
+            <i class="footer__icon fa-brands fa-linkedin"></i>
+            <div class="Copyright">
+                <span>© 2022. Bản quyền thuộc về Cương Đỗ Duy.</span>
+            </div>
         </div>
     </div>
     <script>
@@ -124,7 +195,7 @@
           slideIndex++;
           if (slideIndex > slides.length) {slideIndex = 1}
           slides[slideIndex-1].style.display = "block";  
-          setTimeout(showSlides, 3000); // Change image every 2 seconds
+          setTimeout(showSlides, 3000); // Change image every  seconds
         }
     </script>
 </body>

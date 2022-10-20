@@ -142,7 +142,6 @@
     padding:20px 40px;
     margin-left:auto;
     margin-right:auto;
-
 }
 #selection h3
 {
@@ -157,9 +156,9 @@
     font-style: italic;
     font-size:1.6rem;
     text-align: center;
-    width:100%;
     display:block;
-    padding-top:30px;
+    padding:6px;
+    margin:10px 0;
 }
 #selection p
 {
@@ -190,28 +189,200 @@
 }
 #tourdates
 {
-    width:100%;
-    /* color:#fff; */
+    background-color: #000;
+    padding-top:40px;
+}
+#tourdates #selection h3,#tourdates #selection > span
+{
+    color:#fff;
 }
 .tourdates-selections
 {
     padding-left:0;
     margin:0;
+    margin-top:50px;
     list-style: none;
 }
-.tourdates-selections span
+.tourdates-details
 {
+    width:100%;
+    background-color: #fff;
+    height: 100%;
+    border:1px solid var(--border-color);
+}
+.tourdates-details-box
+{
+    width:20%;
+    display:flex;
+    justify-content:space-between;
+    padding-left:10px;       
+    justify-items: center;
+    height: 100%;
+}
+#selection .tourdates-details-box  span
+{
+    font-style:normal;
+}
+#selection .tourdates-details-box  span:last-child
+{
+    background-color: rgb(244,67,54);
+    color:var(--white-color);
+}
+.tourdates-details-box--active
+{
+    width:100%;
+    padding-right:20px;
+}
+#selection .tourdates-details-box--active span:last-child
+{
+    border-radius: 50%;
+    background-color: #000;
+    color:#fff;
+    height: 100%;
+    justify-items: center;
+}
+.selection--select-menu
+{   
+    width:100%;
+    margin-top:30px;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.selection--select-items
+{
+    width:32%;
+}
+.selection--select-items img
+{
+    vertical-align:middle;
+    width:100%;
+    transition: opacity linear 0.1s;
+}
+.selection--select-items-description
+{
+    background-color: #fff;
+    width:100%;
+    font-size: 1.6rem;
+    padding-left:15px;
+}
+.selection--select-items-description >h4
+{
+    font-size:1.8rem;
+    padding:16px 0 12px 0;
+}
+#selection .selection--select-items-description > p
+{
+    font-size:1.6rem;
+    padding:12px 16px 12px 0;
+}
+#selection .selection--select-items-description > p:first-of-type
+{
+    color:rgb(119,119,119);
+}
+#selection .selection--select-items-description .btn--buy
+{
+    background-color: #000;
+    color:#fff;
+    padding:8px 12px; 
+    margin:20px 0 28px 0;   
+}
+.selection--select-items img:hover
+{
+opacity: 0.6;
+}
+#selection .selection--select-items-description .btn--buy:hover
+{
+    background-color: #ccc;
+    color:#000;
+    cursor:pointer;
+}
+#contact
+{
+    background-color: #fff;
+}
+#contact #selection h3
+{
+    margin-top:70px;
+    letter-spacing: 8px;
+    font-size:2.8rem;
+}
+#contact #selection >span:first-of-type
+{
+    margin-top: 30px;
+}
+.contact-in4
+{
+    padding-left:0;
+    list-style: none;
+    width:50%;
+    float:left;
+}
+.contact-in4-items
+{
+    display:flex;
+    width:100%;
+    justify-content:flex-start;
+    align-items: center;
+    font-size:1.8rem;
+}
+.contact-in4-icon
+{
+    font-size:1.6rem;
+}
+.contact-in4-user
+{
+    width:50%;
     display:inline-block;
 }
-#container
-{   
-
-}
-#content
+.contact-in4-user--name-gmail
 {
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.contact-in4-user-data
+{
+    margin-top: 10px;
+    width:45%;
+    display:inline-block;
+    padding:16px 12px;
+}
+.contact-in4-user-data-note
+{
+    width:100%;
+}
+#contact #selection .contact-in4-user-btn--send
+{
+    background-color: #000;
+    color:#fff;
+    padding:8px 12px; 
+    margin:20px 0 28px 0; 
+    display: block;
+    float: right;
+}
 
+.image--map
+{
+    width:100%;
+    margin-top:30px;
+    margin-bottom:60px;
 }
 #footer
 {
-
+    width:100%;
+    font-size:2.4rem;
+    margin:0 auto;
+    text-align: center;
+    opacity: 1;
+    margin-bottom: 150px;
+}
+#footer .footer__icon:hover
+{
+    opacity: 0.6;
+}
+.Copyright
+{
+    margin-top:30px;
+    font-size:2rem;
 }
