@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/fontawesome-free-6.2.0-web/css/all.css">
     <link rel="icon" href="assets/img/tải xuống2.png">
+    <link rel="stylesheet" href="assets/css/responsive.css">
    
 </head>
 <body>
@@ -32,6 +33,9 @@
                 </ul>
                 <div class="search--btn">
                     <i class="search--icon fa fa-search"></i>
+                </div>
+                <div class="search--btn catelog--responsive-mobile">
+                    <i class="fa fa-bars"></i>
                 </div>
         </div>
         <div id="slider">
@@ -144,27 +148,29 @@
             <div id="selection">
                 <h3>Contact</h3>
                 <span>Fan? Drop a note!</span>
-                <ul class="contact-in4">
-                    <li class="contact-in4-items">
-                        <i class="contact-in4-icon fa fa-map-marker"></i>
-                        <span>Chicago, US</span>
-                    </li>
-                    <li class="contact-in4-items">
-                        <i class="contact-in4-icon fa fa-phone"></i>
-                        <span> Phone: +00 151515</span>
-                    </li>
-                    <li class="contact-in4-items">
-                        <i class="contact-in4-icon fa fa-envelope"> </i>
-                        <span>Email: cuong.doduy@hcmut.edu.vn</span>
-                    </li>
-                </ul>
-                <div class="contact-in4-user">
-                    <div class="contact-in4-user--name-gmail">
-                        <input type="text" class="contact-in4-user-data" placeholder="Name">
-                        <input type="text" class="contact-in4-user-data" placeholder="Gmail">
+                <div class="contact-flex">
+                    <ul class="contact-in4">
+                        <li class="contact-in4-items">
+                            <i class="contact-in4-icon fa fa-map-marker"></i>
+                            <span>Chicago, US</span>
+                        </li>
+                        <li class="contact-in4-items">
+                            <i class="contact-in4-icon fa fa-phone"></i>
+                            <span> Phone: +00 151515</span>
+                        </li>
+                        <li class="contact-in4-items">
+                            <i class="contact-in4-icon fa fa-envelope"> </i>
+                            <span>Email: cuong.doduy@hcmut.edu.vn</span>
+                        </li>
+                    </ul>
+                    <div class="contact-in4-user">
+                        <div class="contact-in4-user--name-gmail">
+                            <input type="text" class="contact-in4-user-data" placeholder="Name">
+                            <input type="text" class="contact-in4-user-data" placeholder="Gmail">
+                        </div>
+                        <input type="text" class="contact-in4-user-data contact-in4-user-data-note " placeholder="Message">
+                        <button class="btn contact-in4-user-btn--send">SEND</button>
                     </div>
-                    <input type="text" class="contact-in4-user-data contact-in4-user-data-note " placeholder="Message">
-                    <button class="btn contact-in4-user-btn--send">SEND</button>
                 </div>
             </div>
         </div>
