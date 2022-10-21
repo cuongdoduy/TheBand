@@ -36,3 +36,13 @@ html
     padding:4px 8px;
     font-size:1.6rem;
 }
+@keyframes fadeIn
+{
+    from {
+        opacity: var(--begin);
+    }
+    to
+    {
+        opacity:var(--end);
+    }
+}
