@@ -19,14 +19,14 @@
     }
     .catelog--responsive-mobile
     {
-        display:inline-block;
-        height:46px;
-        width:60px;
-        float:right;
-        color:#fff;
-        font-size:1.6rem;
-        text-align: right;
-        padding-right:10px;
+        display: inline-block;
+        height: 46px;
+        width: 44px;
+        float: right;
+        color: #fff;
+        font-size: 1.6rem;
+        text-align: center;
+    }
     }
     .mySlides--CaptionText
     {

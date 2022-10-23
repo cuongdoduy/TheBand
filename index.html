@@ -16,10 +16,10 @@
     <div id="main">
         <div id="header">
                 <ul id="nav">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Band</a></li>
-                    <li><a href="">Tour</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#selection">Band</a></li>
+                    <li><a href="#tourdates">Tour</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <li>
                         <a href="#">More
                             <i class="fa fa-caret-down"></i>
@@ -34,7 +34,7 @@
                 <div class="search--btn">
                     <i class="search--icon fa fa-search"></i>
                 </div>
-                <div class="search--btn catelog--responsive-mobile">
+                <div id="catelog--responsive" class="search--btn catelog--responsive-mobile">
                     <i class="fa fa-bars"></i>
                 </div>
         </div>
@@ -202,6 +202,31 @@
           if (slideIndex > slides.length) {slideIndex = 1}
           slides[slideIndex-1].style.display = "block";  
           setTimeout(showSlides, 3000); // Change image every  seconds
+        }
+        var header=document.getElementById('header');
+        var mobileMenu=document.getElementById('catelog--responsive');
+        var headerHeight=header.clientHeight;
+        mobileMenu.onclick=function()
+        {
+            var isClosed=header.clientHeight === headerHeight;
+            if (isClosed)
+            {
+                header.style.height='auto';
+            }
+            else
+            {
+                header.style.height=null;
+            }
+        }
+        // Tự động đóng khi chọn Menu
+        var menuItems=document.querySelectorAll('#nav li a[href*="#"]');
+        for(var i=0;i<menuItems.length;i++)
+        {
+            var menuItem = menuItems[i];
+            menuItem.onclick=function()
+            {
+                header.style.height=null;
+            }
         }
     </script>
 </body>
