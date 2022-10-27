@@ -9,10 +9,29 @@
 /* Mobile */
 @media(max-width:739px)
 {
+    #header
+    {
+        overflow: hidden;
+    }
+    #nav
+    {
+        width:80%;
+    }
+    #nav .subnav
+    {
+        position: relative;
+        padding-left:12px;
+    }
+    #nav>li>a
+    {
+        display:block;
+        width:100%;
+    }
     #nav>li 
     {
         display:block;
     }
+
     .search--btn
     {
         display:none;

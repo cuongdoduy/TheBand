@@ -223,11 +223,20 @@
         for(var i=0;i<menuItems.length;i++)
         {
             var menuItem = menuItems[i];
+            var isParentMenu=menuItem.nextElementSibling && menu.nextElementSibling.classList.contains('subnav');
             menuItem.onclick=function()
             {
-                header.style.height=null;
+                if (isParentMenu)
+                {
+                    event.preventDefault();
+                }
+                else
+                {
+                    header.style.height=null;
+                }
             }
         }
+        
     </script>
 </body>
 </html>
